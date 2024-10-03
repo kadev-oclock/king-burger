@@ -1,14 +1,8 @@
 import LoginForm from "./LoginForm";
 
 function LoginPages() {
-
   //affichage (render)
 
-  return (
-
-   <LoginForm />
- 
-  );
+  return <LoginForm />;
 }
 export default LoginPages;
-

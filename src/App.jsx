@@ -1,15 +1,17 @@
-
-import './App.css'
-import LoginPages from './components/pages/login/LoginPages'
-
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import LoginPage from "./components/pages/login/LoginPage";
+import OrderPage from "./Order/OrderPage";
+import ErrorPage from "./components/pages/Error/ErrorPage";
 
 function App() {
-
-
   return (
-<LoginPages/>
-
-  )
+    <Routes>
+      <Route path="/" element={<LoginPage />}/>
+      <Route path="/Order" element={<OrderPage/>}/>
+      <Route path="*" element={<ErrorPage/>}/>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
