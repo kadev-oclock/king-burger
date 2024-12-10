@@ -47,8 +47,7 @@ picture {
 }
 
 /* 8. Assurer une taille minimum des boutons, et enlever le style par défaut */
-button,
-input,
+
 select,
 textarea {
   font: inherit; /* Utiliser la même police que le parent */
